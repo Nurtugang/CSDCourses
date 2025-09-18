@@ -169,10 +169,12 @@
 .header-carousel .owl-nav {
     position: absolute;
     top: 50%;
-    right: 8%;
+    width: 100%;
     transform: translateY(-50%);
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 2%;
+    pointer-events: none;
 }
 
 .header-carousel .owl-nav .owl-prev,
@@ -188,6 +190,7 @@
     border: 1px solid #FFFFFF;
     font-size: 22px;
     transition: .5s;
+    pointer-events: auto;
 }
 
 .header-carousel .owl-nav .owl-prev:hover,
